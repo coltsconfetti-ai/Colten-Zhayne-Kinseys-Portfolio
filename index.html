@@ -34,7 +34,7 @@
     .corner {
       position: fixed;
       width: 220px;
-      opacity: 0.18;
+      opacity: 0.25;
       z-index: 0;
     }
 
@@ -50,10 +50,10 @@
       transform: rotate(200deg);
     }
 
-    /* foreground decorative plants */
+    /* foreground decorative plants - VISIBLE */
     .plant-decoration {
       position: fixed;
-      opacity: 0.35;
+      opacity: 0.7;
       z-index: 0.5;
       pointer-events: none;
     }
@@ -127,6 +127,7 @@
 
     .photo-card {
       text-align: center;
+      display: block;
     }
 
     .photo-card img {
@@ -135,6 +136,7 @@
       border-radius: 12px;
       border: 2px solid #1f4d2c;
       box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+      display: block;
     }
 
     h1 {
@@ -214,39 +216,39 @@
     <path d="M100 20 Q120 50 130 100 Q120 120 100 130 Q80 120 70 100 Q80 50 100 20" fill="#4a9d6f" opacity="0.6"/>
   </svg>
 
-  <!-- Monstera leaf plants -->
+  <!-- Monstera leaf plants - VISIBLE -->
   <svg class="plant-decoration plant-top-left" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-    <path d="M50 10 Q60 30 65 50 Q70 70 65 90 Q50 100 35 90 Q30 70 35 50 Q40 30 50 10" fill="none" stroke="#7fdc98" stroke-width="2" opacity="0.8"/>
-    <ellipse cx="55" cy="45" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.6"/>
-    <ellipse cx="45" cy="55" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.6"/>
-    <ellipse cx="50" cy="70" rx="10" ry="15" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.6"/>
+    <path d="M50 10 Q60 30 65 50 Q70 70 65 90 Q50 100 35 90 Q30 70 35 50 Q40 30 50 10" fill="none" stroke="#7fdc98" stroke-width="2" opacity="1"/>
+    <ellipse cx="55" cy="45" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.9"/>
+    <ellipse cx="45" cy="55" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.9"/>
+    <ellipse cx="50" cy="70" rx="10" ry="15" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.9"/>
   </svg>
 
   <svg class="plant-decoration plant-top-right" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-    <path d="M50 10 Q60 30 65 50 Q70 70 65 90 Q50 100 35 90 Q30 70 35 50 Q40 30 50 10" fill="none" stroke="#7fdc98" stroke-width="2" opacity="0.8"/>
-    <ellipse cx="55" cy="45" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.6"/>
-    <ellipse cx="45" cy="55" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.6"/>
-    <ellipse cx="50" cy="70" rx="10" ry="15" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.6"/>
+    <path d="M50 10 Q60 30 65 50 Q70 70 65 90 Q50 100 35 90 Q30 70 35 50 Q40 30 50 10" fill="none" stroke="#7fdc98" stroke-width="2" opacity="1"/>
+    <ellipse cx="55" cy="45" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.9"/>
+    <ellipse cx="45" cy="55" rx="8" ry="12" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.9"/>
+    <ellipse cx="50" cy="70" rx="10" ry="15" fill="none" stroke="#7fdc98" stroke-width="1.5" opacity="0.9"/>
   </svg>
 
-  <!-- Flower decorations top center -->
+  <!-- Flower decorations top center - VISIBLE -->
   <svg class="plant-decoration flower-top-center" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <!-- Stem -->
     <path d="M50 100 Q48 80 50 60" stroke="#6fbf86" stroke-width="2" fill="none"/>
     <!-- Flower petals -->
-    <circle cx="50" cy="40" r="6" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="62" cy="45" r="6" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="65" cy="57" r="6" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="50" cy="65" r="6" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="35" cy="57" r="6" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="38" cy="45" r="6" fill="#b7f5c2" opacity="0.8"/>
+    <circle cx="50" cy="40" r="6" fill="#b7f5c2" opacity="1"/>
+    <circle cx="62" cy="45" r="6" fill="#b7f5c2" opacity="1"/>
+    <circle cx="65" cy="57" r="6" fill="#b7f5c2" opacity="1"/>
+    <circle cx="50" cy="65" r="6" fill="#b7f5c2" opacity="1"/>
+    <circle cx="35" cy="57" r="6" fill="#b7f5c2" opacity="1"/>
+    <circle cx="38" cy="45" r="6" fill="#b7f5c2" opacity="1"/>
     <!-- Center -->
     <circle cx="50" cy="50" r="5" fill="#7fdc98"/>
   </svg>
 
-  <!-- Bottom decorative plants -->
+  <!-- Bottom decorative plants - VISIBLE -->
   <svg class="plant-decoration plant-bottom-left" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-    <g opacity="0.7">
+    <g opacity="1">
       <!-- Leaf 1 -->
       <path d="M30 120 Q20 100 25 80 Q30 60 35 50" stroke="#7fdc98" stroke-width="2" fill="none"/>
       <!-- Leaf 2 -->
@@ -257,7 +259,7 @@
   </svg>
 
   <svg class="plant-decoration plant-bottom-right" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-    <g opacity="0.7">
+    <g opacity="1">
       <!-- Leaf 1 -->
       <path d="M70 120 Q80 100 75 80 Q70 60 65 50" stroke="#7fdc98" stroke-width="2" fill="none"/>
       <!-- Leaf 2 -->
@@ -267,33 +269,33 @@
     </g>
   </svg>
 
-  <!-- Side flowers -->
+  <!-- Side flowers - VISIBLE -->
   <svg class="plant-decoration flower-mid-left" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
     <path d="M40 80 L40 50" stroke="#6fbf86" stroke-width="2" fill="none"/>
-    <circle cx="40" cy="35" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="50" cy="40" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="52" cy="50" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="40" cy="55" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="28" cy="50" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="30" cy="40" r="5" fill="#b7f5c2" opacity="0.8"/>
+    <circle cx="40" cy="35" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="50" cy="40" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="52" cy="50" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="40" cy="55" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="28" cy="50" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="30" cy="40" r="5" fill="#b7f5c2" opacity="1"/>
     <circle cx="40" cy="43" r="4" fill="#7fdc98"/>
   </svg>
 
   <svg class="plant-decoration flower-mid-right" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
     <path d="M40 80 L40 50" stroke="#6fbf86" stroke-width="2" fill="none"/>
-    <circle cx="40" cy="35" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="50" cy="40" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="52" cy="50" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="40" cy="55" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="28" cy="50" r="5" fill="#b7f5c2" opacity="0.8"/>
-    <circle cx="30" cy="40" r="5" fill="#b7f5c2" opacity="0.8"/>
+    <circle cx="40" cy="35" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="50" cy="40" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="52" cy="50" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="40" cy="55" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="28" cy="50" r="5" fill="#b7f5c2" opacity="1"/>
+    <circle cx="30" cy="40" r="5" fill="#b7f5c2" opacity="1"/>
     <circle cx="40" cy="43" r="4" fill="#7fdc98"/>
   </svg>
 
   <div class="container">
 
     <div class="card photo-card">
-      <img src="profile.jpg" alt="Colten Zhayne Kinsey" />
+      <img src="profile.jpg" alt="Colten Zhayne Kinsey" onerror="this.style.display='none'"/>
     </div>
 
     <div class="card">
