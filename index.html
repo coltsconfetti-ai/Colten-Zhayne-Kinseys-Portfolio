@@ -17,6 +17,7 @@
       overflow-x: hidden;
     }
 
+    /* soft leafy background overlay */
     body::before {
       content: "";
       position: fixed;
@@ -29,6 +30,7 @@
       pointer-events: none;
     }
 
+    /* corner floral accents */
     .corner {
       position: fixed;
       width: 220px;
@@ -48,6 +50,34 @@
       transform: rotate(200deg);
     }
 
+    /* foreground leaf accents */
+    .leaf-accent {
+      position: absolute;
+      opacity: 0.25;
+      z-index: 0.5;
+    }
+
+    .leaf-top-right {
+      top: 80px;
+      right: 20px;
+      width: 100px;
+      transform: rotate(-25deg);
+    }
+
+    .leaf-bottom-left {
+      bottom: 150px;
+      left: 10px;
+      width: 80px;
+      transform: rotate(35deg);
+    }
+
+    .leaf-middle-right {
+      top: 350px;
+      right: 5px;
+      width: 60px;
+      transform: rotate(15deg);
+    }
+
     .container {
       width: 100%;
       max-width: 560px;
@@ -62,6 +92,8 @@
       padding: 22px;
       margin-bottom: 14px;
       backdrop-filter: blur(6px);
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
@@ -75,6 +107,7 @@
       text-align: center;
       color: #7fdc98;
       margin-bottom: 20px;
+      font-size: 14px;
     }
 
     .section {
@@ -101,11 +134,14 @@
       margin-top: 8px;
       border: 1px solid #1f4d2c;
       text-align: center;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     a:hover {
       background: #1a4024;
+      border-color: #2d7a3f;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
     }
 
     .social-links {
@@ -124,8 +160,14 @@
 
 <body>
 
+  <!-- background corner leaves -->
   <img class="corner top-left" src="https://pngimg.com/uploads/leaf/leaf_PNG36758.png" alt="leaf decoration" />
   <img class="corner bottom-right" src="https://pngimg.com/uploads/leaf/leaf_PNG36682.png" alt="leaf decoration" />
+
+  <!-- foreground leaf accents -->
+  <img class="leaf-accent leaf-top-right" src="https://pngimg.com/uploads/leaf/leaf_PNG36758.png" alt="leaf accent" />
+  <img class="leaf-accent leaf-bottom-left" src="https://pngimg.com/uploads/leaf/leaf_PNG36682.png" alt="leaf accent" />
+  <img class="leaf-accent leaf-middle-right" src="https://pngimg.com/uploads/leaf/leaf_PNG36758.png" alt="leaf accent" />
 
   <div class="container">
 
@@ -138,27 +180,28 @@
       <div class="section">About</div>
       <div class="bio">
         High school performer with experience in choir, show choir, and stage productions.
-        Focus on vocal performance and live stage work.
+        Focus on vocal performance and live stage work. Creative media work through BigBack Studios.
       </div>
     </div>
 
     <div class="card">
-      <div class="section">Experience</div>
+      <div class="section">Focus</div>
       <div class="bio">
-        <strong>Choir & Show Choir:</strong> Multiple years of ensemble performance and choreography<br><br>
-        <strong>Stage Productions:</strong> Featured performances in theatrical productions<br><br>
-        <strong>Content Creation:</strong> Creating and sharing performance content online
+        Singing • Show Choir • Stage Performance • Content Creation
       </div>
     </div>
 
     <div class="card">
-      <div class="section">Connect</div>
+      <div class="section">Featured Work</div>
+      <a href="https://www.youtube.com/@BIGBACKSTUDIOS-AC" target="_blank">BigBack Studios YouTube</a>
+    </div>
+
+    <div class="card">
+      <div class="section">Social</div>
       <div class="social-links">
-        <a href="https://youtube.com" target="_blank">YouTube</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://tiktok.com" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/thatonebigguy___/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/colten.kinsey/" target="_blank">Facebook</a>
       </div>
-      <a href="mailto:contact@example.com">Email</a>
     </div>
 
   </div>
