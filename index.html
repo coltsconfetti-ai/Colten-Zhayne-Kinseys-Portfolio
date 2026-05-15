@@ -30,7 +30,7 @@
       pointer-events: none;
     }
 
-    /* corner floral accents */
+    /* corner floral accents - SVG leaves */
     .corner {
       position: fixed;
       width: 220px;
@@ -155,19 +155,39 @@
       min-width: 120px;
       margin-top: 0;
     }
+
+    svg {
+      filter: drop-shadow(0 0 2px rgba(183, 245, 194, 0.3));
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- background corner leaves -->
-  <img class="corner top-left" src="https://pngimg.com/uploads/leaf/leaf_PNG36758.png" alt="leaf decoration" />
-  <img class="corner bottom-right" src="https://pngimg.com/uploads/leaf/leaf_PNG36682.png" alt="leaf decoration" />
+  <!-- background corner leaves as SVG -->
+  <svg class="corner top-left" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M100 20 Q120 50 130 100 Q120 120 100 130 Q80 120 70 100 Q80 50 100 20" fill="#4a9d6f" opacity="0.6"/>
+  </svg>
 
-  <!-- foreground leaf accents -->
-  <img class="leaf-accent leaf-top-right" src="https://pngimg.com/uploads/leaf/leaf_PNG36758.png" alt="leaf accent" />
-  <img class="leaf-accent leaf-bottom-left" src="https://pngimg.com/uploads/leaf/leaf_PNG36682.png" alt="leaf accent" />
-  <img class="leaf-accent leaf-middle-right" src="https://pngimg.com/uploads/leaf/leaf_PNG36758.png" alt="leaf accent" />
+  <svg class="corner bottom-right" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M100 20 Q120 50 130 100 Q120 120 100 130 Q80 120 70 100 Q80 50 100 20" fill="#4a9d6f" opacity="0.6"/>
+  </svg>
+
+  <!-- foreground leaf accents as SVG -->
+  <svg class="leaf-accent leaf-top-right" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 Q70 30 75 60 Q70 75 50 85 Q30 75 25 60 Q30 30 50 10" fill="#5fb878" opacity="0.7"/>
+    <path d="M50 20 L50 75" stroke="#3a7a50" stroke-width="1" opacity="0.5"/>
+  </svg>
+
+  <svg class="leaf-accent leaf-bottom-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 Q70 30 75 60 Q70 75 50 85 Q30 75 25 60 Q30 30 50 10" fill="#5fb878" opacity="0.7"/>
+    <path d="M50 20 L50 75" stroke="#3a7a50" stroke-width="1" opacity="0.5"/>
+  </svg>
+
+  <svg class="leaf-accent leaf-middle-right" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 Q70 30 75 60 Q70 75 50 85 Q30 75 25 60 Q30 30 50 10" fill="#5fb878" opacity="0.7"/>
+    <path d="M50 20 L50 75" stroke="#3a7a50" stroke-width="1" opacity="0.5"/>
+  </svg>
 
   <div class="container">
 
